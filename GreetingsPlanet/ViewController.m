@@ -19,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor colorWithRed:.5 green:.5 blue:.5 alpha:1.0];
+    
+    colors_panel.layer.cornerRadius = 8.0;
+    colors_panel.layer.borderWidth = .8;
+    colors_panel.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning {
